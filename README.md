@@ -133,7 +133,7 @@ The [Sample Structure](#sample-structure) above demonstrates JS file naming.
 #####Namespacing
 We want to minimize the global footprint. "Global" variables and functions should be stored in a single global object, named as a two-letter abbreviation of the project. In this example, the global variable object is `bp`.
 
-#####onReady
+#####Initialization
 Each JS file should be wrapped by the onReady function with the following shorthand:
 
     ;$(function(){
