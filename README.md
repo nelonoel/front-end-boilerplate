@@ -1,7 +1,7 @@
 ##Front-end Boilerplate
 
 ###Overview
-This is unapologetically opinionated. We want to keep this as flexible but as maintainable as possible. Principles are derived from [SMACSS](http://smacss.link) and [Atomic Web Design](http://atomic.link). Since one size doesn't fit all when it comes to front-end development, this will be a continuous work in progress.
+This is unapologetically opinionated. We want to keep this as flexible but as maintainable as possible. Principles are derived from [SMACSS](http://smacss.com) and [Atomic Web Design](http://bradfrost.com/blog/post/atomic-web-design/). Since one size doesn't fit all when it comes to front-end development, this will be a continuous work in progress.
 
 ###Tools & Libraries
  - **SCSS + Compass** - CSS Preprocessor
