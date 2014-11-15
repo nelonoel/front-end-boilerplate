@@ -1,15 +1,15 @@
-##Voyager Front-end Boilerplate
+##Front-end Boilerplate
 
 ###Overview
 This is unapologetically opinionated. We want to keep this as flexible but as maintainable as possible. Principles are derived from [SMACSS](http://smacss.link) and [Atomic Web Design](http://atomic.link). Since one size doesn't fit all when it comes to front-end development, this will be a continuous work in progress.
 
 ###Tools & Libraries
-**SCSS + Compass** - CSS Preprocessor
-**Foundation Grid** - Responsive Grid
-**Reset** - CSS Normalization
-**Grunt** - Build Automation
-**Autoprefixer** - CSS Prefixer based from CanIUse Database.
-**Modernizr** - Feature Checking ( if applicable )
+ - **SCSS + Compass** - CSS Preprocessor
+ - **Foundation Grid** - Responsive Grid
+ - **Reset** - CSS Normalization
+ - **Grunt** - Build Automation
+ - **Autoprefixer** - CSS Prefixer based from CanIUse Database.
+ - **Modernizr** - Feature Checking ( if applicable )
 
 ###Sample Structure
     - assets/
@@ -150,10 +150,10 @@ An object must be cached if used more than ones.
 ---
 
 ###Future
-**Module Injection** via Bower
-**Dependency Management** via RequireJS
-**Project Scaffolding** via Yeoman
-**Unit Testing** via Jasmine
+ - **Module Injection** via Bower
+ - **Dependency Management** via RequireJS
+ - **Project Scaffolding** via Yeoman
+ - **Unit Testing** via Jasmine
 
 ------------------------------------
 &copy; 2014 [Voyager Innovations Inc.](http://voyagerinnovation.com)
