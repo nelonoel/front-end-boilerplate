@@ -48,10 +48,10 @@ This is unapologetically opinionated. We want to keep this as flexible but as ma
 Most parts are self-explanatory. However, some files and directories are worth noting.
 
  - `_colors.scss` is where all color variables are placed. Please refer to the [Colors](#colors) section for naming colors.
-  - `_defaults.scss` contains individual elements' default styling.
-  - `components/` - contains styles for combinations of elements that can be present on different pages.
-  - `layouts/` - contains page-specific styles.
-  - `style.scss` - is where everything is `@import`ed.
+ - `_defaults.scss` contains individual elements' default styling.
+ - `components/` - contains styles for combinations of elements that can be present on different pages.
+ - `layouts/` - contains page-specific styles.
+ - `style.scss` - is where everything is `@import`ed.
 
 ---
 
