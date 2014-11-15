@@ -3,11 +3,11 @@
 ###Overview
 This is unapologetically opinionated. We want to keep this as flexible but as maintainable as possible. Principles are derived from [SMACSS](http://smacss.link) and [Atomic Web Design](http://atomic.link). Since one size doesn't fit all when it comes to front-end development, this will be a continuous work in progress.
 
-###Tools
+###Tools & Libraries
 **SCSS + Compass** - CSS Preprocessor
 **Foundation Grid** - Responsive Grid
 **Reset** - CSS Normalization
-**Grunt** - Asset Process Automation
+**Grunt** - Build Automation
 **Autoprefixer** - CSS Prefixer based from CanIUse Database.
 **Modernizr** - Feature Checking ( if applicable )
 
@@ -19,7 +19,8 @@ This is unapologetically opinionated. We want to keep this as flexible but as ma
          ├── fonts/
          ├── img/
          ├── js/
-         │   ├── bp.main.js
+         │   ├── bp.js
+         │   ├── bp.form.js
          │   ├── bp.modal.js
          │   ├── vendors/
          │   │   ├── jquery.min.js
@@ -48,8 +49,11 @@ Most parts are self-explanatory. However, some files and directories are worth n
 
  - `_colors.scss` is where all color variables are placed. Please refer to the [Colors](#colors) section for naming colors.
   - `_defaults.scss` contains individual elements' default styling.
-  - `scss/components/` - contains styles for combinations of elements that can be present on different pages.
+  - `components/` - contains styles for combinations of elements that can be present on different pages.
   - `layouts/` - contains page-specific styles.
+  - `style.scss` - is where everything is `@import`ed.
+
+---
 
 ###Styling
 
@@ -78,7 +82,7 @@ Property shorthands should be maximized.
 Selectors and properties are preferably alphabetized.
 
 #####Selectors
-Element selectors, followed by classes and then ID selectors. Preferably alphabetized.
+Element selectors, followed by class selectors, ID selectors and lastly, @ selectors. Preferably alphabetized.
 Selectors should be separated by a comma and a line break.
 
 #####Spacing
@@ -111,26 +115,39 @@ A space before the opening bracket is required.
 `em` is the standard unit for `font-size` across all elements.
 Default `line-height` is `1.4`.
 
+---
+
 ###Scripting
-#####Comments
+
 #####Event Handling
     $containingElement.on('click', '.buttons', function(e){
         /* Handle event here */
         e.preventDefault();
     });
+
+#####Filenames
+The [Sample Structure](#sample-structure) above demonstrates JS file naming.
+ - `bp.js` is the main file. where *bp* stands for *boilerplate*, which is the applications two-letter abbreviation.
+ - `bp.modal.js` is used in naming component-specific scripts.
+
+#####Namespacing
+We want to minimize the global footprint. "Global" variables and functions should be stored in a single global object, named as a two-letter abbreviation of the project. In this example, the global variable object is `bp`.
+
 #####onReady
-Each JS file should be wrapped by the onReady function with the following shorthand.
+Each JS file should be wrapped by the onReady function with the following shorthand:
 
     ;$(function(){
         /* Do stuff here */
     });
-#####Namespacing
+
 #####Variables
 camelCase variable and function names.
 jQuery object variables should be prefixed by a `$` sign.
 An object must be cached if used more than ones.
 
     $button = $('.button');
+
+---
 
 ###Future
 **Module Injection** via Bower
